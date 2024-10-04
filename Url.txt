@@ -1,0 +1,38 @@
+1)  Get All Categories (Paginated):
+    URL: GET http://localhost:8686/api/categories?page=0
+2)  Create a New Category:
+    URL: POST http://localhost:8686/api/categories
+    JSON Data
+     {
+        "category_id":87,
+        "category_name":"Mobile"
+     }
+3)  Get Category by ID:
+    URL: GET http://localhost:8686/api/categories/{id}
+    Example: URL: GET http://localhost:8080/api/categories/101
+4)  Update Category by ID:
+    URL: PUT http://localhost:8686/api/categories/{id}
+5)  Delete Category by ID:
+    URL: DELETE http://localhost:8686/api/categories/{id}
+
+1)  Get All Categories (Paginated):
+    URL: GET http://localhost:8686/api/products?page=0
+2)  Create a New Category:
+    URL: POST http://localhost:8686/api/products
+    JSON Data
+            {
+                  "product_id": 1,
+                  "product_Name": "laptop",
+                  "product_Price": 150000.00,
+                  "category": {
+                  "category_id": 102,
+                  "category_name":"SamSang"
+                 }
+           }
+3)  Get Category by ID:
+    URL: GET http://localhost:8686/api/products/{id}
+    Example: URL: GET http://localhost:8080/api/products/101
+4)  Update Category by ID:
+    URL: PUT http://localhost:8686/api/products/{id}
+5)  Delete Category by ID:
+    URL: DELETE http://localhost:8686/api/products/{id}
